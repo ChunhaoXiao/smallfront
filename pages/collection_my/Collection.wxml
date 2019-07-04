@@ -1,0 +1,27 @@
+<view id="box">  
+	<block wx:for="{{thisdata}}" wx:for-item="item" wx:key="key" >
+		<view class="text-boxs {{item.cur==1?'disn':''}}" style="{{dis}}">
+			<view class="box-left"  bindtap="gonew">
+				<image src="{{item.img}}" mode="widthFix"></image>
+			</view>
+
+			<view class="box-right">
+				<p class="font-wei-p" id="t" bindtap="click"  data-text="{{text}}">{{item.text}}</p>
+				<p class="text-p-box">
+					<strong class="dizhi" bindtap="">{{item.dizhi}}</strong>
+				</p>
+
+				<p class="dolep">
+					<span class="manei">￥{{item.manei}}</span>
+					<span class="length">月销量{{item.length}}件</span>
+				</p>
+			</view>
+
+			<!-- 回收站 -->
+			<view class="untils" bindtap="untils"  data-index="{{index}}">
+				<image src="/images/untils.png" mode="widthFix"></image>
+			</view> 
+		</view>
+	</block>
+	<!--最外层BOX结束 -->
+</view>

@@ -1,0 +1,92 @@
+<view class='touk'>
+  <image src="/images/toud.png" class="toud">
+    <text>恭喜发财大吉大利</text>
+  </image>
+</view>
+<view class='come'>来自商家的抢红包活动</view>
+<view class='pricek'>
+  <text class='price'>0.62</text>
+  <text class='yuan'>元</text>
+</view>
+<view class='tishi'>已存入账户，可进行提现</view>
+<view class='liebiao'>
+  <view class='linea'>
+    <view class='left'>5个红包，1分钟被抢光</view>
+    <view class='right'>仅显示手气佳前20名用户</view>
+  </view>
+  <view class='item'>
+    <view class='shu'>
+      <view class='dise'></view>
+      <view class='zi'>1</view>
+    </view>
+    <image src='/images/head.png' class='head'></image>
+    <view class='zhong'>
+      <view class='lineb'>
+        <text class='name'>蓝心</text>
+        <text class='neirong'>【奖：会员金卡一张】</text>
+      </view>
+      <view class='time'>10-8  20:00</view>
+    </view>
+    <view class='jine'><text>0.62元</text><image src='/images/zuijia.png'></image></view>
+  </view>
+  <view class='item'>
+    <view class='shu'>
+      <view class='dise'></view>
+      <view class='zi'>2</view>
+    </view>
+    <image src='/images/head.png' class='head'></image>
+    <view class='zhong'>
+      <view class='lineb'>
+        <text class='name'>蓝心</text>
+        <text class='neirong'>【奖：会员金卡一张】</text>
+      </view>
+      <view class='time'>10-8  20:00</view>
+    </view>
+    <view class='jine'><text>0.62元</text></view>
+  </view>
+  <view class='item'>
+    <view class='shu'>
+      <view class='dise'></view>
+      <view class='zi'>3</view>
+    </view>
+    <image src='/images/head.png' class='head'></image>
+    <view class='zhong'>
+      <view class='lineb'>
+        <text class='name'>蓝心</text>
+        <text class='neirong'>【奖：会员金卡一张】</text>
+      </view>
+      <view class='time'>10-8  20:00</view>
+    </view>
+    <view class='jine'><text>0.62元</text></view>
+  </view>
+  <view class='item'>
+    <view class='shu'>
+      <view class='dise'></view>
+      <view class='zi'>4</view>
+    </view>
+    <image src='/images/head.png' class='head'></image>
+    <view class='zhong'>
+      <view class='lineb'>
+        <text class='name'>蓝心</text>
+        <text class='neirong'>【奖：会员金卡一张】</text>
+      </view>
+      <view class='time'>10-8  20:00</view>
+    </view>
+    <view class='jine'><text>0.62元</text></view>
+  </view>
+  <view class='item'>
+    <view class='shu'>
+      <view class='dise'></view>
+      <view class='zi'>5</view>
+    </view>
+    <image src='/images/head.png' class='head'></image>
+    <view class='zhong'>
+      <view class='lineb'>
+        <text class='name'>蓝心</text>
+        <text class='neirong'>【奖：会员金卡一张】</text>
+      </view>
+      <view class='time'>10-8  20:00</view>
+    </view>
+    <view class='jine'><text>0.62元</text></view>
+  </view>
+</view>

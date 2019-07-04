@@ -1,0 +1,30 @@
+<!-- 搜索 -->
+<view class='searchk'>
+  <view class='searchall'>
+    <view class='searchall_zuo'>
+      <image src='/images/sousuo_04.png'></image>
+    </view>
+    <view class='searchall_you'>
+      <input name='title' type='text' value='' placeholder='搜索商品和店名' placeholder-style="color:#fff;"></input>
+    </view>
+  </view>
+</view>  
+<view class="classify">
+  <!--分类导航栏-->
+  <scroll-view class='left-navbar' scroll-y="true">
+
+    <view wx:for="{{list_fen}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="{{list_fen}}" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-id="{{item.id}}">{{item.name}}
+    </view>
+  </scroll-view>
+  <!--商品展示-->
+  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}">
+    <view class="goods-list">
+      <view  class="goods" wx:for="{{list_dian}}" wx:key="{{list_dian}}">
+ <navigator url='../../pages/goods_xqjia/Commodity?id={{item.id}}'>
+        <image class="img" src="{{item.pic[0]}}"></image>
+        <text>{{item.title}}</text>
+</navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>

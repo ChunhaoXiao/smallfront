@@ -1,0 +1,18 @@
+<view class="y_kuang">
+  <view class='yellow'>
+    <view class='y_zi_kuang'>
+      <view class='yellow_zi1'>等待买家付款</view>
+      <view class='yellow_zi2'>剩23小时59分自动关闭</view>
+    </view>
+  </view>
+  <view class='dingdan'>
+    <view class='dingdan_k'>
+      <view class='dingdan_k_zuo'><image src='/images/dfk_xiangqing_20.jpg'></image></view>
+      <view class='dingdan_k_you'>
+        <view class='fkxq_zi1'>大连海昌发现王国一日游（日/夜场）</view>
+        <view class='fkxq_zi2'>有效期：2018.02.8-2018.03.8</view>
+        <view class='fkxq_zi3'></view>
+      </view>
+    </view>
+  </view>
+</view>

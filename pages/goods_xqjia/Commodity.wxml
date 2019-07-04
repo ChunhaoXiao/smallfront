@@ -1,0 +1,172 @@
+ 
+<view class="box">
+  <view class="banner">
+    <swiper indicator-dots="true" indicator-color="rgba(229,229,229,.7)" indicator-active-color="#f9c00d" autoplay="true" interval="5000" vertical="true" duration='500'>
+      <block wx:for="{{data.pic}}" wx:key="{{data.pic}}">
+        <swiper-item>
+          <image src='{{item}}' mode="aspectFill"></image>
+         </swiper-item>
+      </block>
+    </swiper>
+  </view>
+	<h2>{{data.title}}</h2>
+  <view class='containers'>
+    <text class="content {{ellipsis?'ellipsis':'unellipsis'}}">商家介绍：{{data.content}}</text>
+    <view class='zhankai' bindtap='ellipsis'>
+      <view>
+        <view>{{ellipsis?'﹀':'︿'}}</view>
+      </view>
+    </view>
+  </view>
+	<!-- 地址 --> 
+	<view class="dizhi">
+    <image src='/images/address.png' class='address'></image>
+		<text class='ditext'>{{data.dizhi}}</text>
+		<!-- 电话 -->
+		<view class="call" data-call="{{call}}" bindtap="callclick">
+			<image src="/images/call.png" mode='widthFix'></image>
+		</view>
+	</view>	
+
+  <!-- 商家活动 -->
+  <view class='huodong'>
+    <text class="huodongtext">商家活动</text>
+  </view>
+
+  <view class='kk'>
+  <navigator url='../../pages/hongbao/hongbao'>
+    <view class='itema'>
+      <image src='/images/itema.png' class='pica'></image>
+      <view class='wena'>红包抢到手软</view>
+      <view class='wena'>每日可参与一次</view>
+    </view>
+  </navigator>
+  <navigator url='../../pages/hongbao/hongbao'>
+    <view class='itemb'>
+      <image src='/images/itemb.png' class='pica'></image>
+      <view class='wena'>绿色出行</view>
+      <view class='wena'>计步赚礼品</view>
+    </view>
+  </navigator>
+  <navigator url='../../pages/hongbao/hongbao'>
+    <view class='itema'>
+      <image src='/images/itema.png' class='pica'></image>
+      <view class='wena'>红包抢到手软</view>
+      <view class='wena'>每日可参与一次</view>
+    </view>
+  </navigator>
+  <navigator url='../../pages/hongbao/hongbao'>
+    <view class='itemb'>
+      <image src='/images/itemb.png' class='pica'></image>
+      <view class='wena'>绿色出行</view>
+      <view class='wena'>计步赚礼品</view>
+    </view>
+  </navigator>
+  </view>
+
+	<!-- 商家代金券 -->
+	<view class="ping">
+		<text class="pingtext">商家代金券</text>
+	</view>
+
+	<view class="show" wx:for="{{list1}}" wx:key="{{list1}}">
+		<p class="show-name">{{item.title}}</p>
+		<p class="show-time">{{showtime}}</p>
+		<view class="show-box">
+			<p class="show-manei">￥{{item.cost_price}}</p>
+			<button class='look'>查看详情</button>
+		</view>
+	</view>
+
+  <!-- 商家会员 -->
+	<!-- <view class="ping">
+		<text class="pingtext">商家会员</text>
+	</view> -->
+
+	<!-- <view class="showa">
+		<p class="show-name">商家会员卡</p>
+		<p class="show-time">储值1000起成为会员，会员可享更大优惠哦</p>
+		<view class="show-box">
+			<p class="show-manei">￥1000</p>
+			<button class='look'>查看详情</button>
+		</view>
+	</view> -->
+
+  <!-- 商家推荐 -->
+	<view class="jian">
+		<text class="pingtext">商家推荐</text>
+    <navigator url='../../pages/tuijian/tuijian' class='point_nav'>
+      <view class='huodong_point1'></view>
+      <view class='huodong_point2'></view>
+      <view class='huodong_point2'></view>
+    </navigator>
+	</view>
+
+  <view class='ul'>
+    <view class='li'>
+      <image src='/images/goods_23.png'></image>
+      <view class='goodsname'>牛九州海鲜全家福</view>
+      <view class='linethree'>
+        <view class='quan'>员</view>
+        <view class='wem'>储值1000起可享会员价</view>
+      </view>
+      <view class='linefour'> 
+        <view class='foura'>会员价</view>
+        <view class='fourb'>￥99</view>
+        <view class='fourc'>￥299</view>
+      </view>
+      <view class='annv'><button class='mai'>立即购买</button></view>
+    </view>
+    <view class='li'>
+      <image src='/images/goods_23.png'></image>
+      <view class='goodsname'>牛九州海鲜全家福</view>
+      <view class='linethree'>
+        <view class='quan'>员</view>
+        <view class='wem'>储值1000起可享会员价</view>
+      </view>
+      <view class='linefour'> 
+        <view class='foura'>会员价</view>
+        <view class='fourb'>￥99</view>
+        <view class='fourc'>￥299</view>
+      </view>
+      <view class='annv'><button class='mai'>立即购买</button></view>
+    </view>
+    <view class='li'>
+      <image src='/images/goods_23.png'></image>
+      <view class='goodsname'>牛九州海鲜全家福</view>
+      <view class='linethree'>
+        <view class='quan'>员</view>
+        <view class='wem'>储值1000起可享会员价</view>
+      </view>
+      <view class='linefour'> 
+        <view class='foura'>会员价</view>
+        <view class='fourb'>￥99</view>
+        <view class='fourc'>￥299</view>
+      </view>
+      <view class='annv'><button class='mai'>立即购买</button></view>
+    </view>
+    <view class='li'>
+      <image src='/images/goods_23.png'></image>
+      <view class='goodsname'>牛九州海鲜全家福</view>
+      <view class='linethree'>
+        <view class='quan'>员</view>
+        <view class='wem'>储值1000起可享会员价</view>
+      </view>
+      <view class='linefour'> 
+        <view class='foura'>会员价</view>
+        <view class='fourb'>￥99</view>
+        <view class='fourc'>￥299</view>
+      </view>
+      <view class='annv'><button class='mai'>立即购买</button></view>
+    </view>
+  </view>
+</view>
+<view class="call_zhao" bindtap='zhaodis' style='{{zhao1}}'>
+  <view class='call_anniu'>
+    <view class='number'>
+      <view class='call_an_number' data-phone="{{data.phone}}" style='border-bottom:1px solid #eee;' bindtap="calling">{{data.phone}}</view>
+      <view class='call_an_number' bindtap="callings" data-phone="{{data.phone1}}">{{data.phone1}}</view>
+    </view>
+    <view class='close' bindtap="telclose">取消</view>
+  </view>
+</view>

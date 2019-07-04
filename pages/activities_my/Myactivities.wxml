@@ -1,0 +1,25 @@
+<view id="box">
+<block wx:for="{{thisdata}}" wx:for-item="item">
+<view class="text-boxs" style="{{dis}}">
+<view class="box-left"  bindtap="gonew">
+<image src="/images/Myactivities-1.png" mode="widthFix"></image>
+</view>
+
+<view class="box-right">
+<p class="font-wei-p" id="t" bindtap="click"  data-text="{{text}}">{{item.text}}</p>
+
+<p class="dolep">
+<span class="length">活动时间:{{item.time}}</span>
+</p>
+</view>
+
+<!-- 回收站 -->
+<view class="untils" bindtap="untils">
+<image src="/images/untils.png" mode="widthFix"></image>
+</view>
+</view>
+</block>
+
+
+<!--最外层BOX结束 -->
+</view>

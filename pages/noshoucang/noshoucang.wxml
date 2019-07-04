@@ -1,0 +1,6 @@
+<view class="di">
+  <view class='d_neirong'>
+    <view class='di1'><image src='/images/wushoucang_08.jpg'></image></view>
+    <view class='di2'>您还没有收藏的商品</view>
+  </view>
+</view>

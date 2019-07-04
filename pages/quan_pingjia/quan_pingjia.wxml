@@ -1,0 +1,47 @@
+<scroll-view class="pingjia_box">
+  <view class='p_box1'>
+    <view class='p_touxiang'><image src='/images/pj_touxiang_10.jpg'></image></view>
+    <view class='p_wenben'>
+      <view class='pw_biaoti'>
+        <view class='p_bt_zuo'>小迷糊</view>
+        <view class='p_bt_you'>2018-9-7</view>
+      </view>
+      <p>针对即将进入高考备考的高二学生来说，要通过各种手段来提升自己的阅读能力、思维能力、提升文字的理解能力。哪怕是看一部电影，都要注意去提升自己的理解能力。社会中发生一件事情，都要锻炼自己去理解和领悟。</p>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='p_box1'>
+    <view class='p_touxiang'><image src='/images/pj_touxiang_10.jpg'></image></view>
+    <view class='p_wenben'>
+      <view class='pw_biaoti'>
+        <view class='p_bt_zuo'>小迷糊</view>
+        <view class='p_bt_you'>2018-9-7</view>
+      </view>
+      <p>针对即将进入高考备考的高二学生来说，要通过各种手段来提升自己的阅读能力、思维能力、提升文字的理解能力。哪怕是看一部电影，都要注意去提升自己的理解能力。社会中发生一件事情，都要锻炼自己去理解和领悟。</p>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='p_box1'>
+    <view class='p_touxiang'><image src='/images/pj_touxiang_10.jpg'></image></view>
+    <view class='p_wenben'>
+      <view class='pw_biaoti'>
+        <view class='p_bt_zuo'>小迷糊</view>
+        <view class='p_bt_you'>2018-9-7</view>
+      </view>
+      <p>针对即将进入高考备考的高二学生来说，要通过各种手段来提升自己的阅读能力、思维能力、提升文字的理解能力。哪怕是看一部电影，都要注意去提升自己的理解能力。社会中发生一件事情，都要锻炼自己去理解和领悟。</p>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <view class='p_box1'>
+    <view class='p_touxiang'><image src='/images/pj_touxiang_10.jpg'></image></view>
+    <view class='p_wenben'>
+      <view class='pw_biaoti'>
+        <view class='p_bt_zuo'>小迷糊</view>
+        <view class='p_bt_you'>2018-9-7</view>
+      </view>
+      <p>针对即将进入高考备考的高二学生来说，要通过各种手段来提升自己的阅读能力、思维能力、提升文字的理解能力。哪怕是看一部电影，都要注意去提升自己的理解能力。社会中发生一件事情，都要锻炼自己去理解和领悟。</p>
+    </view>
+  </view>
+  <view class='hr'></view>
+</scroll-view>
+

@@ -1,0 +1,22 @@
+<view class="h_box">
+  <navigator url='../../pages/huodong_xq/huodong_xq' class='navigator1'>
+    <image src='/images/quan_huodong_07.jpg'></image>
+    <view class='h_hang1'>步数记录赚礼品</view>
+    <view class='h_hang2'>活动时间：2019.3.9-2019.9.5</view>
+  </navigator>
+  <navigator url='../../pages/huodong_xq/huodong_xq' class='navigator2'>
+    <image src='/images/quan_huodong_07.jpg'></image>
+    <view class='h_hang1'>步数记录赚礼品</view>
+    <view class='h_hang2'>活动时间：2019.3.9-2019.9.5</view>
+  </navigator>
+  <navigator url='../../pages/huodong_xq/huodong_xq' class='navigator3'>
+    <image src='/images/quan_huodong_07.jpg'></image>
+    <view class='h_hang1'>步数记录赚礼品</view>
+    <view class='h_hang2'>活动时间：2019.3.9-2019.9.5</view>
+  </navigator>
+  <navigator url='../../pages/huodong_xq/huodong_xq' class='navigator4'>
+    <image src='/images/quan_huodong_07.jpg'></image>
+    <view class='h_hang1'>步数记录赚礼品</view>
+    <view class='h_hang2'>活动时间：2019.3.9-2019.9.5</view>
+  </navigator>
+</view>

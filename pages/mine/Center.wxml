@@ -1,0 +1,74 @@
+<header class="top">
+	<view class="text-img-box">
+		<image src="images/user.png" mode="widthFix"></image>
+		<text class="use" data-text="{{user}}" bindtap="onclick">{{user}}</text>
+	</view>
+</header>
+
+
+<view class="box">
+
+	<view class="box-p">
+		<span>我的订单</span>
+		<span class="mydd" bindtap="allorder">全部订单</span>
+	</view>
+
+	<!--  按钮box -->
+	<view class="but-box">
+		<view class="libox" bindtap="godai" data-newsid="1">
+			<image src="/images/fukuan.png" mode="widthFix"></image>
+			<text>待付款</text>
+		</view>
+
+		<view class="libox"  bindtap="godai" data-newsid="2" >
+			<image src="/images/shiyong.png" mode="widthFix"></image>
+			<text>待使用</text>
+		</view>
+
+		<view class="libox"  bindtap="godai" data-newsid="3">
+			<image src="/images/pingjia.png" mode="widthFix"></image>
+			<text>待评价</text>
+		</view>
+
+		<view class="libox"  bindtap="gotui">
+			<image src="/images/tuikuan.png" mode="widthFix"></image>
+			<text>退款</text>
+		</view>
+	</view>
+
+	<!-- 按钮box end！ -->
+
+	<!-- 列表box开始 收藏活动 -->
+	<view class="list-box">
+		<p class="list-box-p" bindtap="goCollection">
+			<text>我的收藏</text>
+			<image src="/images/shoucang1.jpg" mode="widthFix"></image>
+		</p>
+		<p class="list-box-p" bindtap="goactivity">
+			<text>我的活动</text>
+			<image src="/images/huodong.png" mode="widthFix"></image>
+		</p>
+    <p class="list-box-p" bindtap="goshanghu">
+			<text>商户订单</text>
+			<image src="/images/shanghu.png" mode="widthFix"></image>
+		</p>
+    <p class="list-box-p" bindtap="gozhanghu">
+			<text>我的账户</text>
+			<image src="/images/zhanghu.png" mode="widthFix"></image>
+		</p>	
+	</view>
+	<!-- 列表box结束 收藏活动-->
+	
+</view>
+
+
+
+<view class="backbox" style="{{dis}}">
+	<view class="backer">
+		<text>{{tureback}}</text>
+		<p>
+			<button class="thisno" data-no="" bindtap="ofset">取消</button>
+			<button class="thisok" data-go="" bindtap="hide">确定</button>
+		</p>
+	</view>
+</view>	

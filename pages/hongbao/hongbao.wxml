@@ -1,0 +1,17 @@
+<!--pages/hongbao/hongbao.wxml-->
+<view class='bj'>
+  <view class='tou'>
+    <image src='/images/hbao.png' class='hbao'></image>
+    <image src='/images/biaoti.png' class='biaoti'></image>
+    <view class='ever'>每日可抢一次</view>
+    <view class='huotime'>活动时间：2019.9.6-2019.10.8</view>
+    <view class='qiang' bindtap='qiang'>抢</view>
+  </view>
+</view>
+<view class='tubj'><image src='/images/hb_18.png' mode='widthFix'></image></view>
+<!-- 红包灰层 -->
+<view class="grey {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+  <!-- <navigator url='../../pages/hongbao_q/hongbao_q'><image src='/images/hongbao1.png' class='hongbaoa'><view class='activity'>来自商家的抢红包活动</view><view class='gongxi'>恭喜发财，大吉大利！</view></image></navigator> -->
+  <image src='/images/hongbao2.png' class='hongbaob'><view class='activityw'>来自商家的抢红包活动</view><view class='man'>手慢了，红包抢完了</view><navigator url='../../pages/hongbao_w/hongbao_w'><view class='kan'>查看领取详情></view></navigator></image>
+  <image src='/images/close.png' class='close' bindtap='hideRule'></image>
+</view>

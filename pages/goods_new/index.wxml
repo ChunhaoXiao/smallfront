@@ -1,0 +1,20 @@
+<view id="box">
+
+<block >
+	<view class="text-boxs" wx:for="{{list}}" wx:key="{{list}}">
+    <navigator url='../../pages/daijinquan/Commodity?id={{item.id}}'>
+      <view class="target"  bindtap="gonew">
+        <image src="{{item.pic[0]}}"></image>
+        <view class="font-wei-p">{{item.dian_title}}</view>
+        <view class='lineone'><view class='yuan'>券</view><view class='zhe'>{{item.title}}</view></view>
+        <view class='linetwo'>
+          <view class='shengyu'>剩余{{item.stock}}件</view>
+          <view class='rightpart'>￥{{item.cost_price}}</view>
+        </view>
+      </view>
+  </navigator>
+	</view>
+	<!-- DIVbox -->
+</block>
+	<!--最外层BOX结束 -->
+</view>

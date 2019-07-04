@@ -1,0 +1,48 @@
+.h_box{
+  width: 674rpx;
+  height: 655rpx;
+  margin: auto;
+  padding-top: 43rpx;
+  box-sizing: border-box;
+}
+.navigator1{
+  width: 314rpx;
+  height: 290rpx;
+  float: left;
+}
+image{
+  width: 314rpx;
+  height: 230rpx;
+}
+.h_hang1{
+  width: 314rpx;
+  height: 38rpx;
+  margin-left: 5rpx;
+  line-height: 38rpx;
+  font-size: 18rpx;
+}
+.h_hang2{
+  width: 314rpx;
+  height: 16rpx;
+  line-height: 16rpx;
+  margin-left: 5rpx;
+  font-size: 16rpx;
+  color: #7a7a7a;
+}
+.navigator2{
+  width: 314rpx;
+  height: 290rpx;
+  float: right;
+}
+.navigator3{
+  width: 314rpx;
+  height: 290rpx;
+  float: left;
+  margin-top: 32rpx;
+}
+.navigator4{
+  width: 314rpx;
+  height: 290rpx;
+  float: right;
+  margin-top: 32rpx;
+}

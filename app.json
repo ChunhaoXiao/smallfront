@@ -1,0 +1,92 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/business/business",
+    "pages/zhanghu/zhanghu",
+    "pages/shanghu/shanghu",
+    "pages/hongbao/hongbao",
+    "pages/hongbao_q/hongbao_q",
+    "pages/hongbao_w/hongbao_w",
+    "pages/tuijian/tuijian",
+    "pages/danpin/Commodity",
+    "pages/daijinquan/Commodity",
+    "pages/huiyuandp/index",
+    "pages/goods_xqjia/Commodity",
+    "pages/huiyuan/huiyuan",
+    "pages/kindall/kindall",
+    "pages/daipingjia/daipingjia",
+    "pages/collection_my/Collection",
+    "pages/DFK_xiangqing/DFK_xiangqing",
+    "pages/DFK_xiangqing1/DFK_xiangqing1",
+    "pages/mine/Center",  
+    "pages/huodong_xq/huodong_xq",
+    "pages/refund/refund",
+    "pages/kefu/kefu",
+    "pages/refund_success/refund_success",
+    "pages/refund_schedule/refund_schedule",
+    "pages/goods_rexiao/index",
+    "pages/noshoucang/noshoucang",
+    "pages/kind/kind",
+    "pages/goods_new/index",
+    "pages/activities_my/Myactivities",
+    "pages/querenDD/querenDD",
+    "pages/components/search/search",
+    "pages/result/result",
+    "pages/components/welcome/welcome",
+    "pages/quan_huodong/quan_huodong",
+    "pages/quan_pingjia/quan_pingjia",
+    "pages/wu_wohuodong/wu_wohuodong",
+    "pages/wu_liebiao/wu_liebiao",
+    "pages/QB_xiangqing/QB_xiangqing",
+    "pages/tijiaopj/tijiaopj",
+    "pages/dingdanXQ/dingdanXQ",
+    "pages/quxiaodd/quxiaodd",
+    "pages/shibai/shibai",
+    "pages/logs/logs",
+    "pages/chenggong/chenggong",
+    "pages/nosearch/nosearch",
+    "pages/dpj_daisy/dpj_daisy",
+    "pages/dpj_daisy1/dpj_daisy1",
+    "pages/nav_text/nav_text",
+    "pages/shouquan/shouquan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "f9c00d",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabber_icon1_97.jpg",
+        "selectedIconPath": "images/tabber_icon5_97.jpg"
+      },
+      {
+        "pagePath": "pages/kindall/kindall",
+        "text": "分类",
+        "iconPath": "images/tabber_icon2_99.jpg",
+        "selectedIconPath": "images/tabber_icon6_99.jpg"
+      },
+      {
+        "pagePath": "pages/kefu/kefu",
+        "text": "客服",
+        "iconPath": "images/tabber_icon3_101.jpg",
+        "selectedIconPath": "images/tabber_icon7_101.jpg"
+      },
+      {
+        "pagePath": "pages/mine/Center",
+        "text": "我的",
+        "iconPath": "images/tabber_icon4_103.jpg",
+        "selectedIconPath": "images/tabber_icon8_103.jpg"
+      }
+    ],
+    "selectedColor": "#f9c00d",
+    "borderStyle": "black",
+    "color": "#999"
+  },
+  "sitemapLocation": "sitemap.json"
+}

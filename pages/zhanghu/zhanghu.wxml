@@ -1,0 +1,54 @@
+<!--pages/zhanghu/zhanghu.wxml-->
+<view class='bj'>
+  <view class='biaoti'>可提现金额</view>
+  <view class='price'>￥5648.00</view>
+  <button class='tixian' bindtap='showDialogBtn'>立即提现</button>
+</view>
+<view class='tongji'>共3笔可提现订单</view>
+<view class='list'>
+  <view class='fbox2' bindtap='xq'>
+    <view class='fbox2_wf'>
+      <image src='/images/DD_xiao_05.jpg'></image>
+      <view class='fbox2_you'>
+        <view class='fbox2_you1'>大连海昌发现王国一日游（日/夜场）</view>
+        <view class='fbox2_you2'>有效期：2018.02.8-2018.03.8</view>
+        <view class='fbox2_you3'>￥199
+          <text class='fbox2_you2_1'>x1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='fbox2' bindtap='xq'>
+    <view class='fbox2_wf'>
+      <image src='/images/DD_xiao_05.jpg'></image>
+      <view class='fbox2_you'>
+        <view class='fbox2_you1'>大连海昌发现王国一日游（日/夜场）</view>
+        <view class='fbox2_you2'>有效期：2018.02.8-2018.03.8</view>
+        <view class='fbox2_you3'>￥199
+          <text class='fbox2_you2_1'>x1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='fbox2' bindtap='xq'>
+    <view class='fbox2_wf'>
+      <image src='/images/DD_xiao_05.jpg'></image>
+      <view class='fbox2_you'>
+        <view class='fbox2_you1'>大连海昌发现王国一日游（日/夜场）</view>
+        <view class='fbox2_you2'>有效期：2018.02.8-2018.03.8</view>
+        <view class='fbox2_you3'>￥199
+          <text class='fbox2_you2_1'>x1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 弹窗 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">提现已申请</view>
+  <view class="modal-content">将于7个工作日内到账</view>
+  <view class="modal-footer">
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>

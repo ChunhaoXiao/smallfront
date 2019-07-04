@@ -1,0 +1,88 @@
+#box{
+	width:90%;
+	margin:0 auto;
+	margin-left:5%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap:wrap;
+  padding-top: 28rpx;
+}
+
+.text-boxs{
+   display: flex;
+	width: 46%;
+}
+
+.text-boxs image{
+	width:314rpx;
+  height: 230rpx;
+  display: block;
+  margin: auto;
+}
+
+
+.text-boxs p{
+	float: left;
+	width: 100%;
+	font-size:0.8em;
+}
+
+.text-boxs .font-wei-p{
+	font-weight: 600;
+	font-family: 宋体;
+  font-size: 28rpx;
+  width: 314rpx;
+  height:38rpx;
+  line-height: 38rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.target{
+  float:left;
+}
+.lineone{
+  width: 100%;
+  height: 27rpx;
+  padding-left: 5rpx;
+}
+.yuan{
+  width: 21rpx;
+  height: 21rpx;
+  float: left;
+  background-color: #00e0a9;
+  border-radius: 4rpx;
+  font-size: 14rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 21rpx;
+  margin-top: 3rpx;
+}
+.quan{
+  width: 21rpx;
+  height: 21rpx;
+  float: left;
+  background-color: #ff9000;
+  border-radius: 4rpx;
+  font-size: 14rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 21rpx;
+  margin-top: 3rpx;
+}
+.zhe{
+  font-size: 18rpx;
+  color: #999;
+  text-align: left;
+  line-height: 27rpx;
+  float: left;
+  margin-left: 5rpx;
+}
+.lineonea{
+  width: 100%;
+  height: 27rpx;
+  padding-left: 5rpx;
+  margin-bottom: 14rpx;
+}

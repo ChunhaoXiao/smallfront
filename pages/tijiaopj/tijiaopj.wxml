@@ -1,0 +1,12 @@
+<view class="fabupj">
+  <view class='fabu_kuang'>
+    <view class='fabuk_wenzi'>填写您的评价</view>
+    <view class='fabuk_neirong'>
+      <textarea bindtap="btn" name="a" style="width:684rpx;height:302rpx;" maxlength="200" wrap="hard" bindinput='btn'></textarea>
+    </view>
+    <view class='length'>
+      <span class="size">{{length}}</span>/<span>200</span>
+    </view>
+  </view>
+  <view class='fabuk_yellow'>发表</view>
+</view>

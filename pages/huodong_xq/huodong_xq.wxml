@@ -1,0 +1,14 @@
+<block wx:for="{{thisData}}" wx:for-item="item" wx:key="key">
+  <view class="banner">
+    <image src='{{item.image}}'></image>
+    <view class='banner_zhao'>
+      <text class='zhao_zuo'>{{item.tatle}}</text>
+      <text class='zhao_you'>活动时间：{{item.time}}</text>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='jieshao_title'>活动介绍</view>
+    <view class='p'>{{item.content}}</view>
+  </view>
+</block>
+<view class='join_anniu' bindtap='join'>立即参加</view>

@@ -1,0 +1,65 @@
+page{
+  width: 100%;
+  height: 100%;
+  padding-left: 31rpx;
+  box-sizing: border-box;
+}
+.p_box1{
+  width: 100%;
+  height: 362rpx;
+}
+.p_touxiang{
+  width: 73rpx;
+  height: 73rpx;
+  border-radius: 50%;
+  background: #fff;
+  float: left;
+  margin-top: 32rpx;
+  overflow: hidden;
+}
+.p_touxiang image{
+  width: 73rpx;
+  height: 73rpx;
+}
+.p_wenben{
+  width: 576rpx;
+  height: 337rpx;
+  float: left;
+  margin-left: 19rpx;
+  margin-top: 25rpx;
+}
+.pw_biaoti{
+  width: 100%;
+  height: 74rpx;
+}
+.p_bt_zuo{
+  width: 84rpx;
+  height: 100%;
+  float: left;
+  line-height: 74rpx;
+  font-size: 28rpx;
+  color: #737171;
+}
+.p_bt_you{
+  width: 134rpx;
+  height: 100%;
+  float: right;
+  line-height: 74rpx;
+  font-size: 24rpx;
+  color: #737171;
+  text-align: center;
+  overflow: hidden;
+}
+p{
+  width: 576rpx;
+  height: 221rpx;
+  line-height: 42rpx;
+  font-size: 24rpx;
+  color: #000;
+}
+.hr{
+  width: 666rpx;
+  height: 1rpx;
+  background: #e5e5e5;
+  margin-left: 11rpx;
+}

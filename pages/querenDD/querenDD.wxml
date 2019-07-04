@@ -1,0 +1,48 @@
+<view class="xq_ddxq">
+  <view class='ddxq_box'>
+    <view class='xqbox_zuo'><image src='/images/DD_xiao_05.jpg'></image></view>
+    <view class='xqbox_you'>
+      <view class='xqbox_you1'>大连海昌发现王国一日游（日/夜场）</view>
+      <view class='xqbox_you2'>有效期：2018.02.8-2018.03.8
+        <view class='xqbox_you2_you'>x1</view>
+      </view>
+      <view class='xqbox_you3'>￥199</view>
+    </view>
+  </view>
+</view>
+<view class='majialiebiao'>
+    <view class='mj_liebiao1'>
+      <view class='mlb1_zuo'>买家姓名</view>
+      <view class='mlb1_you'><input type='text' placeholder='必填 填写买家的姓名' placeholder-class='place1'></input></view>
+    </view>
+    <view class='line1'></view>
+    <view class='mj_liebiao2'>
+      <view class='mlb1_zuo'>买家电话</view>
+      <view class='mlb1_you'><input type='text' placeholder='必填 填写买家的电话' placeholder-class='place1'></input></view>
+    </view>
+</view>
+<view class='shangpinlb'>
+  <view class='slb1'>
+    <view class='mlb1_zuo'>商品金额</view>
+    <view class='slb1_you'>￥199</view>
+  </view>
+  <view class='line1'></view>
+  <view class='slb2'>
+    <view class='mlb1_zuo'>有效期</view>
+    <view class='slb2_you'>2019.3.6-2020.8.3</view>
+  </view>
+</view>
+<view class='xq_bottom'>
+  <view class='b_line1'></view>
+  <view class='b_line2'></view>
+  <view class='b_neirong'>
+    <view class='bnr_zuo'>
+      <view class='bnr_zuo1'>实际付款：</view>
+      <view class='bnr_zuo2'>￥199</view>
+    </view>
+    <navigator url="../../pages/shibai/shibai">
+      <view class='bnr_you'>立即支付</view>
+    </navigator> 
+    
+  </view>
+</view>

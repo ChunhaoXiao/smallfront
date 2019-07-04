@@ -1,0 +1,14 @@
+<view class="kong1"></view>
+<view class="shibai">
+  <view class='sfanwei'>
+    <view class='neirong'>
+      <view class='tubiao'><image src='/images/支付失败_05.jpg'></image></view>
+      <view class='wenzi'>
+        <view class='zfshibai'>支付失败</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='anniu'>
+  <view class='an'><image src='/images/fanhuian_14.jpg'></image></view>
+</view>

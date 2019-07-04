@@ -1,0 +1,58 @@
+.fabupj{
+  width: 688rpx;
+  height: 673rpx;
+  background: #fff;
+  margin: auto;
+}
+.fabu_kuang{
+  width: 100%;
+  height: 470rpx;
+}
+.fabuk_wenzi{
+  width: 168rpx;
+  height: 85rpx;
+  line-height: 85rpx;
+  margin-left: 29rpx;
+  font-size: 28rpx;
+}
+.fabuk_neirong{
+  width: 688rpx;
+  height: 302rpx;
+  border: 2rpx #f4f4f4 solid;
+  background: #fbfbfb;
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+textarea{
+  overflow: hidden;
+}
+.length{
+  width:  123rpx;
+  height: 83rpx;
+  float: right;
+  line-height: 83rpx;
+  font-size: 28rpx;
+  color: #999999;
+  text-align: center;
+}
+.contant{
+  width: 123rpx;
+  height: 83rpx;
+  float: right;
+  font-size: 28rpx;
+  color: #999999;
+  line-height: 83rpx;
+  text-align: center;
+}
+
+.fabuk_yellow{
+  width: 686rpx;
+  height: 80rpx;
+  background: #f9c00d;
+  margin: auto;
+  margin-top: 123rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+}

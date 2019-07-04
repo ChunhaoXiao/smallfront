@@ -1,0 +1,13 @@
+<view class="yellow1">
+  <view class='sskuang'>
+    <view class='fdj'><image src='/images/无搜索1_07.jpg'></image></view>
+    <view class='shuruk'><input type='text' placeholder='婚纱摄影' placeholder-class='place'></input>
+    </view>
+  </view>
+</view>
+<view class='neirongk'>
+  <view class='neirong'>
+    <view class='kuang1'><image src='/images/nosearch_16.jpg'></image></view>
+    <view class='kuang2'>抱歉，没有搜索到任何信息</view>
+  </view>
+</view>

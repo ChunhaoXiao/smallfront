@@ -1,0 +1,185 @@
+<!-- 搜索 -->
+<view class='searchk'>
+  <view class='searchall'>
+    <view class='searchall_zuo'>
+      <image src='/images/sousuo_04.png'></image>
+    </view>
+    <view class='searchall_you'>
+      <input name='title' type='text' value='' placeholder='搜索商品和店名' placeholder-style="color:#fff;"></input>
+    </view>
+  </view>
+</view> 
+<!-- 下拉筛选框 -->
+<view class="page">
+  <view class="nav">
+    <view class="nav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+      <view class="content">全城</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son borders {{shownavindex == 2? 'active' : ''}}" bindtap="list" data-nav="2">
+      <view class="content">距离最近</view>
+    </view>
+    <view class="nav-son {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3">
+      <view class="content">智能排序</view>
+      <view class="icon"></view>
+    </view>
+  </view>
+
+  <!-- 全城 -->
+  <view class="quyu {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+
+    <view class="qy quyu-left">
+      <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" bindtap="selectleft" data-city='{{index}}'>
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-center">
+      <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{citycenter}}" bindtap="selectcenter" data-city='{{index}}'>
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-right">
+      <view wx:for="{{cityright}}" class="{{select3 == index?'current3':''}}" bindtap='selectright' data-city="{{index}}">
+        <label>{{item}}</label>
+        <image src='/images/selectRight.png' style="{{select3 == index?'display:block':'display:none'}}"></image>
+      </view>
+    </view>
+    <view class='form-btn'>
+      <button class='btn-reset' bindtap='quyuEmpty'>重置</button>
+      <button class='btn-submit' bindtap='submitFilter'>确定</button>
+    </view>
+  </view>
+
+  <!-- 智能排序 -->
+  <view class="temp temp2 contentCenter {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+    <view wx:for="{{content}}" bindtap='selectPX' data-index="{{index}}" class="pxTable {{pxIndex == index?'current4':''}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="fullbg {{isfull ?'fullopacity':''}}" bindtap="hidebg"></view>
+</view>
+<!-- 列表 -->
+  <view class="nav_items">  
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator>
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator> 
+    <navigator url="../index/index">
+      <view class='litem'>   
+        <image src="/images/goods_23.png"></image>
+        <text class='wena'>牛九州海鲜全家福</text>
+        <view class='wenb'>  
+          <text class='sales'>月销量44件</text>  
+          <text class='price'>￥99</text>
+        </view> 
+      </view>  
+    </navigator>  
+  </view>      
+<!-- 置顶 -->
+<image src='/images/top.png' class='goTop' bindtap="goTop" hidden='{{!floorstatus}}'></image>

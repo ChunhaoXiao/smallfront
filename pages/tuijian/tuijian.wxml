@@ -1,0 +1,22 @@
+<view id="box">  
+	<block wx:for="{{thisdata}}" wx:for-item="item" wx:key="key" >
+		<view class="text-boxs {{item.cur==1?'disn':''}}" style="{{dis}}">
+			<view class="box-left"  bindtap="gonew">
+				<image src="{{item.img}}" mode="widthFix" class='pic'>
+          <view class='paiming' wx:if="{{ index < 10 }}">{{index+1}}</view>
+          <view class='top' wx:if="{{ index < 3 }}">TOP</view>
+        </image>
+			</view>
+
+			<view class="box-right">
+				<view class="font-wei-p" id="t" bindtap="click"  data-text="{{text}}">{{item.text}}</view>
+        <view class='zu'>
+          <view class='foura'>会员价</view>
+          <view class='fourb'>￥99</view>
+          <view class='fourc'>￥158</view>
+        </view>
+			</view>
+		</view>
+	</block>
+	<!--最外层BOX结束 -->
+</view>

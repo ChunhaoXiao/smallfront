@@ -1,0 +1,206 @@
+<view class='order'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-wa="0" bindtap="clickTab">全部</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-wa="1" bindtap="clickTab">待付款</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-wa="2" bindtap="clickTab">待使用</view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-wa="3" bindtap="clickTab">待评价</view>
+  </view> 
+</view>
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+    <view class='all_box'>
+      <block wx:for="{{thatData}}" wx:for-item="item" wx:key="key">
+        <view class='uselist1'>
+          <view class='uselist_box'>
+            <view class='red_up'>
+              <view class='red_up_left'>订单状态</view>
+              <text class='red_up_right'>{{item.state}}</text>
+            </view>
+            <view class='red_zhong'>
+              <view class='zhong_up' bindtap='payContent'>
+                <image src='{{item.useImage}}' class='zhong_up_zuo'></image>
+                <view class='zhong_up_you'>
+                  <view class='zhong_up_you1'>{{item.useTatle}}</view>
+                  <view class='zhong_up_you2'>有效期：{{item.useTime}}
+                    <text class='zuy_you'>{{item.useNumber}}</text>
+                  </view>
+                  <view class='zhong_up_you3'>{{item.useUnitPrice}}</view>
+                </view>
+              </view>
+              <view class='zhong_bottom'>
+                <view class='zb_kuang'>共1件商品，合计金额：{{item.useTotal}}</view>
+              </view>
+            </view>
+            <view class='red_bottom'>
+              <view class='bottom_left' bindtap='submit'>取消订单</view>
+              <view class='button_right' bindtap='gopay'>{{item.uesButton}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
+        <view class='uselist1'>
+          <view class='uselist_box'>
+            <view class='red_up'>
+              <view class='red_up_left'>订单状态</view>
+              <text class='red_up_right'>{{item.state}}</text>
+            </view>
+            <view class='red_zhong'>
+              <view class='zhong_up' bindtap='listcontent'>
+                <image src='{{item.useImage}}' class='zhong_up_zuo'></image>
+                <view class='zhong_up_you'>
+                  <view class='zhong_up_you1'>{{item.useTatle}}</view>
+                  <view class='zhong_up_you2'>有效期：{{item.useTime}}
+                    <text class='zuy_you'>{{item.useNumber}}</text>
+                  </view>
+                  <view class='zhong_up_you3'>{{item.useUnitPrice}}</view>
+                </view>
+              </view>
+              <view class='zhong_bottom'>
+                <view class='zb_kuang'>共1件商品，合计金额：{{item.useTotal}}</view>
+              </view>
+            </view>
+            <view class='red_bottom'>
+              <view class='red_bottom_an' bindtap='refund'>{{item.uesButton}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <block wx:for="{{initData}}" wx:for-item="item" wx:key="key">
+        <view class='uselist1'>
+          <view class='uselist_box'>
+            <view class='red_up'>
+              <view class='red_up_left'>订单状态</view>
+              <text class='red_up_right'>{{item.state}}</text>
+            </view>
+            <view class='red_zhong'>
+              <view class='zhong_up' bindtap='listcontent'>
+                <image src='{{item.useImage}}' class='zhong_up_zuo'></image>
+                <view class='zhong_up_you'>
+                  <view class='zhong_up_you1'>{{item.useTatle}}</view>
+                  <view class='zhong_up_you2'>有效期：{{item.useTime}}
+                    <text class='zuy_you'>{{item.useNumber}}</text>
+                  </view>
+                  <view class='zhong_up_you3'>{{item.useUnitPrice}}</view>
+                </view>
+              </view>
+              <view class='zhong_bottom'>
+                <view class='zb_kuang'>共1件商品，合计金额：{{item.useTotal}}</view>
+              </view>
+            </view>
+            <view class='red_bottom'>
+              <view class='red_bottom_an' bindtap='evaluate'>{{item.uesButton}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='sybox'>
+      <block wx:for="{{thatData}}" wx:for-item="item" wx:key="key">
+        <view class='uselist1'>
+          <view class='uselist_box'>
+            <view class='red_up'>
+              <view class='red_up_left'>订单状态</view>
+              <text class='red_up_right'>{{item.state}}</text>
+            </view>
+            <view class='red_zhong'>
+              <view class='zhong_up' bindtap='payContent'>
+                <image src='{{item.useImage}}' class='zhong_up_zuo'></image>
+                <view class='zhong_up_you'>
+                  <view class='zhong_up_you1'>{{item.useTatle}}</view>
+                  <view class='zhong_up_you2'>有效期：{{item.useTime}}
+                    <text class='zuy_you'>{{item.useNumber}}</text>
+                  </view>
+                  <view class='zhong_up_you3'>{{item.useUnitPrice}}</view>
+                </view>
+              </view>
+              <view class='zhong_bottom'>
+                <view class='zb_kuang'>共1件商品，合计金额：{{item.useTotal}}</view>
+              </view>
+            </view>
+            <view class='red_bottom'>
+              <view class='bottom_left' bindtap='submit'>取消订单</view>
+              <view class='button_right' bindtap='gopay'>{{item.uesButton}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='sybox'>
+      <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
+        <view class='uselist1'>
+          <view class='uselist_box'>
+            <view class='red_up'>
+              <view class='red_up_left'>订单状态</view>
+              <text class='red_up_right'>{{item.state}}</text>
+            </view>
+            <view class='red_zhong'>
+              <view class='zhong_up' bindtap='listcontent'>
+                <image src='{{item.useImage}}' class='zhong_up_zuo'></image>
+                <view class='zhong_up_you'>
+                  <view class='zhong_up_you1'>{{item.useTatle}}</view>
+                  <view class='zhong_up_you2'>有效期：{{item.useTime}}
+                    <text class='zuy_you'>{{item.useNumber}}</text>
+                  </view>
+                  <view class='zhong_up_you3'>{{item.useUnitPrice}}</view>
+                </view>
+              </view>
+              <view class='zhong_bottom'>
+                <view class='zb_kuang'>共1件商品，合计金额：{{item.useTotal}}</view>
+              </view>
+            </view>
+            <view class='red_bottom'>
+              <view class='usebutton' bindtap='listcontent'>立即使用</view>
+              <view class='red_bottom_an' bindtap='refund'>{{item.uesButton}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='sybox'>
+      <block wx:for="{{initData}}" wx:for-item="item" wx:key="key">
+        <view class='uselist1'>
+          <view class='uselist_box'>
+            <view class='red_up'>
+              <view class='red_up_left'>订单状态</view>
+              <text class='red_up_right'>{{item.state}}</text>
+            </view>
+            <view class='red_zhong'>
+              <view class='zhong_up' bindtap='listcontent'>
+                <image src='{{item.useImage}}' class='zhong_up_zuo'></image>
+                <view class='zhong_up_you'>
+                  <view class='zhong_up_you1'>{{item.useTatle}}</view>
+                  <view class='zhong_up_you2'>有效期：{{item.useTime}}
+                    <text class='zuy_you'>{{item.useNumber}}</text>
+                  </view>
+                  <view class='zhong_up_you3'>{{item.useUnitPrice}}</view>
+                </view>
+              </view>
+              <view class='zhong_bottom'>
+                <view class='zb_kuang'>共1件商品，合计金额：{{item.useTotal}}</view>
+              </view>
+            </view>
+            <view class='red_bottom'>
+              <view class='red_bottom_an' bindtap='evaluate'>{{item.uesButton}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </swiper-item>
+</swiper>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <text class='text_wenzi'>确定要取消订单吗</text> 
+  <view class='button_anniu'>
+    <button class="ba_zuo" bindtap="go">取消</button>
+    <view class='ba_you' bindtap="untils"  data-index="{{index}}">确定</view>
+  </view>
+</view>  

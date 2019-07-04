@@ -1,0 +1,81 @@
+.kong1{
+  width: 100%;
+  height: 33rpx;
+}
+.box1{
+  width: 100%;
+  height: 256rpx;
+}
+.chenggong{
+  width: 686rpx;
+  height: 256rpx;
+  background: #ffffff;
+  margin: auto;
+  border: 1rpx solid #eeeeee;
+  padding-top: 50rpx;
+  box-sizing: border-box;
+
+}
+.neirongk{
+  width: 299rpx;
+  height: 120rpx;
+  margin: auto;
+}
+.tu{
+  width: 166rpx;
+  height: 100%;
+  float: left;
+}
+.tu image{
+  width: 166rpx;
+  height: 100%;
+}
+.zi{
+  width: 133rpx;
+  height: 100%;
+  float: right;
+}
+.wenzi{
+  width: 110rpx;
+  height: 27rpx;
+  float: right;
+  margin-top: 54rpx;
+  font-size: 26rpx;
+  color: #191515;
+}
+.anniu{
+  width: 100%;
+  height: 190rpx;
+  margin-top: 60rpx;
+}
+.an1{
+  width: 100%;
+  height: 76rpx;
+}
+.xiangqing{
+  width: 686rpx;
+  height: 100%;
+  margin: auto;
+  background: #ffffff;
+  border: 1rpx solid #eeeeee;
+  font-size: 28rpx;
+  color: #f9c00d;
+  text-align: center;
+  line-height: 76rpx;
+}
+.an2{
+  width: 100%;
+  height: 76rpx;
+  margin-top: 38rpx;
+}
+.jixu{
+  width: 686rpx;
+  height: 100%;
+  margin: auto;
+  background: #f9c00d;
+  border: 1rpx solid #eeeeee;
+  font-size: 28rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 76rpx;
+}

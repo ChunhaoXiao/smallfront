@@ -1,0 +1,95 @@
+.kefu_box{
+  width: 100%;
+  height: 412rpx;
+  padding-top: 120rpx;
+  box-sizing: border-box;
+}
+.pingtai_logo{
+  width: 260rpx;
+  height: 62rpx;
+  margin: auto;
+}
+.pingtai_logo image{
+  width: 260rpx;
+  height: 62rpx;
+}
+.call_box{
+  width: 535rpx;
+  height: 137rpx;
+  margin: auto;
+  margin-top:93rpx; 
+}
+.call1{
+  width: 191rpx;
+  height: 100%;
+  float: left;
+}
+.call1_logo{
+  width: 78rpx;
+  height: 78rpx;
+  border-radius: 50%;
+  margin: auto;
+}
+.call1_logo image{
+  width: 78rpx;
+  height: 78rpx;
+}
+.call1_number{
+  width: 191rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  margin-top: 35rpx;
+  font-size: 30rpx;
+}
+.call2{
+  width: 226rpx;
+  height: 137rpx;
+  float: right;
+}
+.call2_number{
+  width: 100%;
+  height: 24rpx;
+  line-height: 24rpx;
+  margin-top: 35rpx;
+  font-size: 30rpx;
+}
+.call_zhao{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.3;
+}
+.call_anniu{
+  width: 750rpx;
+  height: 250rpx;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.call_an_number{
+  width: 680rpx;
+  height: 106rpx;
+  text-align: center;
+  background: #fff;
+  margin: auto;
+  line-height: 106rpx;
+  font-size: 35rpx;
+}
+.close{
+  width: 680rpx;
+  height: 106rpx;
+  text-align: center;
+  background: #fff;
+  margin: auto;
+  margin-top: 20rpx;
+  line-height: 106rpx;
+  font-size: 35rpx;
+}

@@ -1,0 +1,55 @@
+<view class="fkxq">
+  <block wx:for="{{orderData}}" wx:for-item="item" for:key="key">
+    <view class='fbox1'>
+      <view class='fbox1_wenzi1'>等待买家付款</view>
+      <view class='fbox1_wenzi2'>{{item.countDown}}自动关闭</view>
+    </view>
+    <view class='fbox2'>
+      <view class='fbox2_wf'>
+        <image src='{{item.orderImge}}'></image>
+        <view class='fbox2_you'>
+          <view class='fbox2_you1'>{{item.orderTatle}}</view>
+          <view class='fbox2_you2'>有效期：{{item.orderDate}}
+            <text class='fbox2_you2_1'>{{item.orderNumber}}</text>
+          </view>
+          <view class='fbox2_you3'>￥{{item.orderPay}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='fbox3'>
+      <view class='fbox3_hang1'>
+        <view class='fbox3_hang1_zuo'>买家姓名</view>
+        <view class='fbox3_hang1_you'>{{item.customerName}}</view>
+      </view>
+      <view class='fbox3_line'></view>
+      <view class='fbox3_hang2'>
+        <view class='fbox3_hang2_zuo'>买家电话</view>
+        <view class='fbox3_hang2_you'>{{item.phoneNumber}}</view>
+      </view>
+      <view class='fbox3_line'></view>
+      <view class='fbox3_hang3'>
+        <view class='fbox3_hang3_zuo'>商品金额</view>
+        <text class='fbox3_hang3_you'>￥{{item.orderPay}}</text>
+      </view>
+      <view class='fbox3_line'></view>
+      <view class='fbox3_hang4'>
+        <view class='fbox3_hang4_zuo'>有效期</view>
+        <text class='fbox3_hang4_you'>{{item.orderDate}}</text>
+      </view>
+    </view>
+    <view class='fbox4'>
+      <button bindtap="submit">取消订单</button>
+      <navigator url="../../pages/quzhifu /quzhifu">
+        <view class='fbox4_an2'>去付款</view>
+      </navigator>
+    </view>
+  </block>
+</view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modalDlg" wx:if="{{showModal}}">
+  <text class='text_wenzi'>确定要取消订单吗</text>
+  <view class='button_anniu'>
+    <button class="ba_zuo" bindtap="go">取消</button>
+    <view class='ba_you'>确定</view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class="page">
+  <view class='refund1' wx:for="{{useData}}" wx:for-item="item">
+    <view class='refund1_box'>
+      <view class='refund1_title'>
+        <text class='r_t_left'>{{item.titleLeft}}</text>
+        <text class='r_t_right'>{{item.titleRight}}</text>
+      </view>
+      <view class='refund1_line'></view>
+      <view class='refund1_list' bindtap='content'>
+        <image src='{{item.listImage}}'></image>
+        <view class='refund1_list_you'>
+          <view class='refund1_list1'>{{item.listOne}}</view>
+          <view class='refund1_list2'>{{item.listTwo}}
+            <text class='refund1_list2_you'>{{item.listTwoRight}}</text>
+          </view>
+          <view class='refund1_list3'>{{item.listThree}}</view>
+        </view>
+      </view>
+      <view class='refund1_Total'>{{item.total}}
+        <text class='refund1_Total_you'>{{item.totalRight}}</text>
+      </view>
+      <view class='refund1_button'>
+        <view class='refund1_b_cs' bindtap='calclick'>{{item.buttonCall}}</view>
+        <view class='refund1_b_content' bindtap='content'>{{item.buttonContent}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='cs_zhao' style='{{zhao1}}' bindtap='zhaothis'>
+  <view class='cs_phone'>
+    <view class='phone_number' bindtap='telclick'>{{tel}}</view>
+    <view class='phone_close' bindtap='telclose'>取消</view>
+  </view>
+</view>

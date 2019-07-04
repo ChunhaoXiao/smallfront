@@ -1,0 +1,6 @@
+<view class="wu_wdhuodong">
+  <view class='shoucang_tu'>
+    <image src='/images/wuhuodong_07.jpg'></image>
+  </view>
+  <view class='huodong_wenzi'>您还没有参加任何活动哦</view>
+</view>

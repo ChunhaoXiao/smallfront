@@ -1,0 +1,58 @@
+<view class="ddxq">
+  <view class='ddxq_box1'>
+    <view class='ddxq_box1wenzi'>
+      <view class='ddbox1_zi1'>已完成</view>
+      <view class='ddbox1_zi2'>请凭券号到商家使用</view>
+    </view>
+  </view>  
+  <view class='ddxq_box2'>
+    <view class='xqbox2_fanwei'>
+      <view class='xqbox2_zuo'><image src='/images/pingjiaXQ_16.jpg'></image></view>
+      <view class='xqbox2_you'>
+        <view class='xqbox2_you1'>大连海昌发现王国一日游（日/夜场）</view>
+        <view class='xqbox2_you2'>有效期：2018.02.8-2018.03.8
+        <view class='you2_cheng1'>x1</view>
+      </view>
+      <view class='xqbox2_you3'>￥199</view>
+    </view>
+    </view>
+  </view>
+  <view class='ddxq_box3'>
+    <view class='ddxq_box3_fanwei'>
+      <view class='box3_baodian1'>
+        <view class='box3_baodian1_zuo'>券号</view>
+        <view class='box3_baodian1_you'>2737954751</view>
+      </view>
+      <view class='biaodan_line1'></view>
+      <view class='box3_biaodan2'>
+        <view class='bbiaodian2_zuo'>付款时间</view>
+        <view class='bbiaodian2_you'>2018-9-2 17:58:05</view>
+      </view>
+      <view class='biaodan_line2'></view>
+      <view class='box3_biaodan3'>
+        <view class='bbiaodian3_zuo'>买家姓名</view>
+        <view class='bbiaodian3_you'>张三</view>
+      </view>
+      <view class='biaodan_line3'></view>
+      <view class='box3_biaodan4'>
+        <view class='bbiaodian4_zuo'>买家电话</view>
+        <view class='bbiaodian4_you'>17621251648</view>
+      </view>
+      <view class='biaodan_line4'></view>
+      <view class='box3_biaodan5'>
+        <view class='bbiaodian5_zuo'>商品金额</view>
+        <view class='bbiaodian5_you'>￥199</view>
+      </view>
+      <view class='biaodan_line5'></view>
+      <view class='box3_biaodan6'>
+        <view class='bbiaodian6_zuo'>有效期</view>
+        <view class='bbiaodian6_you'>2019.3.6-2020.8.3</view>
+      </view>
+      <view class='biaodan_line6'></view>
+      <view class='box3_biaodan7'>
+        <view class='bbiaodian7_zuo'>商家地址</view>
+        <view class='bbiaodian7_you'>西安路罗斯福四楼</view>
+      </view>
+    </view>
+  </view>
+</view>  

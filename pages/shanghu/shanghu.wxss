@@ -1,0 +1,341 @@
+page {
+  width: 100%;
+  height: 100%;
+  background: #fbfbfb;
+}
+
+/*滑块tatle*/
+
+.order {
+  width: 100%;
+  background: #fce086;
+  position: fixed;
+  z-index: 999;
+}
+
+.swiper-tab {
+  width: 670rpx;
+  text-align: center;
+  height: 100%;
+  font-size: 25rpx;
+  line-height: 65rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: auto;
+  color: #444;
+}
+
+.swiper-tab-item1 {
+  width: 149rpx;
+  height: 100%;
+}
+
+.swiper-tab-item {
+  width: 175rpx;
+  height: 100%;
+}
+
+.active {
+  color: #ff6a6a;
+  border-bottom: 4rpx solid #f9c00d;
+  box-sizing: border-box;
+}
+
+.swiper {
+  text-align: center;
+  background-color: #fff;
+}
+
+swiper {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+  height: 2400rpx; /*长度设置有问题 需要修改*/
+}
+
+/*待使用页面样式*/
+
+.sybox {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.uselist1 {
+  width: 686rpx;
+  height: 408rpx;
+  background: #fff;
+  margin: auto;
+  margin-top: 26rpx;
+  border: 1rpx solid #eee;
+  box-sizing: border-box;
+}
+
+.uselist_box {
+  width: 645rpx;
+  height: 100%;
+  margin: auto;
+}
+
+.red_up {
+  width: 100%;
+  height: 87rpx;
+}
+
+.red_up_left {
+  width: 112rpx;
+  height: 100%;
+  float: left;
+  line-height: 87rpx;
+  font-size: 28rpx;
+  color: #000;
+}
+
+.red_up_right {
+  height: 100%;
+  float: right;
+  line-height: 87rpx;
+  font-size: 28rpx;
+  color: #f9c00d;
+}
+
+.red_zhong {
+  width: 100%;
+  height: 221rpx;
+  padding-top: 31rpx;
+  box-sizing: border-box;
+}
+
+.zhong_up {
+  width: 100%;
+  height: 120rpx;
+  background: #fff;
+}
+
+.zhong_up_zuo {
+  width: 161rpx;
+  height: 100%;
+  float: left;
+}
+
+.zhong_up_you {
+  width: 460rpx;
+  height: 100%;
+  float: right;
+}
+
+.zhong_up_you1 {
+  width: 100%;
+  height: 28rpx;
+  font-size: 28rpx;
+  color: #000;
+  line-height: 28rpx;
+  overflow: hidden;
+}
+
+.zhong_up_you2 {
+  width: 100%;
+  height: 62rpx;
+  line-height: 62rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.zuy_you {
+  height: 100%;
+  float: right;
+  text-align: center;
+  overflow: hidden;
+  font-size: 24rpx;
+  line-height: 62rpx;
+  color: #999;
+}
+
+.zhong_up_you3 {
+  height: 20rpx;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #191515;
+  line-height: 20rpx;
+  overflow: hidden;
+}
+
+.zhong_bottom {
+  width: 100%;
+  height: 70rpx;
+}
+
+.zb_kuang {
+  width: 356rpx;
+  height: 100%;
+  float: right;
+  line-height: 70rpx;
+  font-size: 24rpx;
+  color: #191515;
+}
+
+.zb_kuang_jine {
+  width: 100rpx;
+  height: 100%;
+  float: right;
+  text-align: center;
+  overflow: hidden;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #191515;
+}
+
+.red_bottom {
+  width: 100%;
+  height: 64rpx;
+  margin-top: 16rpx;
+}
+
+.red_bottom_an {
+  width: 161rpx;
+  height: 100%;
+  background: #f9c00d;
+  float: right;
+  line-height: 64rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+}
+.usebutton{
+  width: 161rpx;
+  height: 100%;
+  background: #fff;
+  float: left;
+  margin-left:285rpx;
+  border: 1rpx #f9c00d solid;
+  box-sizing: border-box;
+  line-height: 64rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #f9c00d;
+}
+
+/*list1 over*/
+
+/*代付款页面样式（增加按钮）*/
+
+.bottom_left {
+  width: 161rpx;
+  height: 100%;
+  float: left;
+  margin-left: 285rpx;
+  background: #fff;
+  line-height: 64rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #f9c00d;
+  border: 1rpx #f9c00d solid;
+  box-sizing: border-box;
+}
+
+.button_right {
+  width: 161rpx;
+  height: 100%;
+  float: left;
+  margin-left: 40rpx;
+  background: #f9c00d;
+  line-height: 64rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+/*代付款页面样式 over*/
+
+/*全部页面样式（all_box）*/
+
+.all_box {
+  width: 100%;
+  height: 100%;
+}
+
+/*全部页面样式 over*/
+
+/*弹窗样式-取消订单*/
+
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 9000;
+    opacity: 0.4;
+}
+.modalDlg{
+    width: 500rpx;
+    height: 300rpx;
+    position: fixed;
+    top: 59%;
+    left: 46rpx;
+    z-index: 9999;
+    margin: -370rpx 85rpx;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+  width: 160rpx;
+  height: 64rpx;
+  border: 1rpx #f9c00d solid;
+  box-sizing: border-box;
+  background: #fff;
+  line-height: 64rpx;
+  text-align: center;
+  color: #f9c00d;
+  font-size: 28rpx;
+  padding: 0rpx;
+  float: left;
+  border-radius: 0rpx;
+}
+
+button:after {
+  background: transparent;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+.text_wenzi{
+  width: 500rpx;
+  height: 172rpx;
+  line-height: 172rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+.button_anniu{
+  width: 390rpx;
+  height: 70rpx;
+  margin: auto;
+}
+.ba_zuo{
+  width: 170rpx;
+  height: 100%;
+  float: left;
+  border: 1rpx #f9c00d solid;
+  font-size: 28rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #f9c00d;
+}
+.ba_you{
+  width: 170rpx;
+  height: 100%;
+  float: right;
+  background: #f9c00d;
+  font-size: 28rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #fff;
+}

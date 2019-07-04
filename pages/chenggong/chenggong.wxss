@@ -1,0 +1,56 @@
+.kong1{
+  width: 100%;
+  height: 35rpx;
+}
+.shibai{
+  width: 100%;
+  height: 256rpx;
+}
+.sfanwei{
+  width: 686rpx;
+  height: 100%;
+  background: #ffffff;
+  margin: auto;
+  border: 1rpx solid #eeeeee;
+}
+.neirong{
+  width: 299rpx;
+  height: 100%;
+  margin: auto;
+}
+.tubiao{
+  width: 166rpx;
+  height: 100%;
+  float: left;
+}
+.tubiao image{
+  width: 166rpx;
+  height: 100%;
+}
+.wenzi{
+  width: 112rpx;
+  height: 100%;
+  float: right;
+}
+.zfshibai{
+  width: 100%;
+  height: 26rpx;
+  margin-top: 110rpx;
+  font-size: 28rpx;
+  color: #191515;
+}
+.anniu{
+  width: 100%;
+  height: 76rpx;
+  margin-top: 59rpx;
+}
+.an{
+  width: 684rpx;
+  height: 100%;
+  background: #f9c00d;
+  margin: auto;
+}
+.an image{
+  width: 684rpx;
+  height: 100%;
+}

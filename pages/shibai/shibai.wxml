@@ -1,0 +1,19 @@
+<view class="kong1"></view>
+<view class='box1'>
+  <view class='chenggong'>
+    <view class='neirongk'>
+      <view class='tu'><image src='/images/支付成功_08.jpg'></image></view>
+      <view class='zi'>
+        <view class='wenzi'>支付成功</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='anniu'>
+  <view class='an1'>
+    <view class='xiangqing'>查看订单</view>
+  </view>
+  <view class='an2'>
+    <view class='jixu'>继续购买</view>
+  </view>
+</view>

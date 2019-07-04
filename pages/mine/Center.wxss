@@ -1,0 +1,264 @@
+.top{
+  float:left;
+  width:100%;
+  background-color: #f9c00e;
+  padding-bottom: 10px;
+}
+
+.text-img-box{
+  width:100%;
+  text-align: center;
+}
+
+.top image{
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+  border:2px solid #f8f8f8;
+}
+
+.text-img-box .use{
+  width:100%;
+  float:left;
+  text-align: center;
+  color: #fff;
+  font-size:34rpx;
+  font-family:方正准圆简体;
+  font-weight: 600;
+}
+
+.box{
+  width:100%;
+}
+
+.box-p{
+  display: flex;
+  width: 90%;
+  margin-left:5%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  float:left;
+}
+
+.box-p span{
+ font-size:0.9em;
+ font-family: 方正准圆简体;
+ color: #000;
+}
+
+.box-p .mydd{
+  color: #888;
+}
+
+.but-box{
+  float:left;
+  display: flex;
+  width: 90%;
+  margin-left:5%;
+  margin-top:30px;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 30px;
+}
+
+.libox{
+ display: flex;
+ flex-direction: column;
+ width:20%;
+ text-align: center;
+ position: relative;
+ z-index: 999;
+}
+
+.libox image{
+  width:40%;
+  margin:0 auto;
+  float:left;
+}
+
+.libox text{
+  float:left;
+  width:100%;
+  font-family: 方正准圆简体;
+  font-size:31rpx;
+  margin-top: 10px;
+  color: #000;
+}
+
+.list-box{
+  display: flex;
+  flex-direction: column;
+  float:left;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.list-box-p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:100%;
+  padding-top:22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.list-box-p text{
+  font-size:34rpx;
+  font-family: 方正准圆简体;
+  color: #000;
+  line-height: 1.6;
+}
+
+.list-box image{
+ width: 8%;
+}
+
+
+
+.footer{
+  position: absolute;
+  bottom:0;
+  width:100%;
+}
+
+.close{
+ width: 90%;
+ margin-left:5%;
+ float:left;
+ text-align: center;
+ border:1px solid #f9c00d;
+ background-color: #fff;
+ color: #f9c00d;
+ border-radius: 0px;
+}
+
+
+
+footer{
+  float: left;
+  width:100%;
+  border-top: 1px solid #f9c00d;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.foot-box{
+  float:left;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left:5%;
+}
+
+footer p{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+footer p image{
+ width: 30px;
+}
+
+footer p text{
+ font-size:15px;
+ font-family: 方正准圆简体;
+ color: #999999;
+ margin-top: 6px;
+}
+
+
+footer p .mytext{
+  color: #f9c00d;
+}
+
+.backbox{
+ background-color: rgba(0,0,0,.5);
+ width: 100%;
+ height:100%;
+ position: fixed;
+ z-index: 999;
+}
+
+.backer{
+ width:300px;
+ height: 180px;
+ background-color: #fff;
+ margin:0 auto;
+ margin-top: 60%;
+ display: flex;
+ flex-direction: column;
+}
+
+.backer text{
+  float:left;
+  width: 100%;
+  text-align: center;
+  font-family: 方正准圆简体;
+  font-size:1em;
+  margin-top: 40px;
+}
+
+.backer p{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content:center;
+}
+
+
+.backer p button{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  border:1px solid #f9c00d;
+  border-radius: 0px;
+  background-color: #fff;
+  color: #f9c00d;
+  width:120px;
+}
+
+.backer p .thisok{
+  background-color: #f9c00d;
+  color: #fff;
+}
+
+button::after {
+  background: transparent;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+@media screen and (min-width: 640px) {
+
+.backer{
+ width:540px;
+ height: 320px;
+ background-color: #fff;
+ margin:0 auto;
+ margin-top: 42%;
+ display: flex;
+ flex-direction: column;
+}
+
+.backer p{
+  margin-top: 60px;
+}
+
+.backer text{
+  margin-top: 70px;
+}
+
+.backer p button{
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+}
+}

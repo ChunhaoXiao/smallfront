@@ -1,0 +1,180 @@
+<view class="yellow">
+  <view class='frame'>
+    <view class='frame_zuo'>
+      <image src='/images/search_icon_08.jpg'></image>
+    </view>
+    <view class='frame_you'>
+      <input name='sousuo' type='text' placeholder='搜索商品和店名' placeholder-class='placeholder_color' catchtap="intoSearchFunc"></input>
+    </view>
+  </view>
+</view>
+<view class='all_box'>
+  <view class="banner">
+    <swiper indicator-dots="true" indicator-color="rgba(229,229,229,.7)" indicator-active-color="#f9c00d" autoplay="true" interval="1500" vertical="true" duration='500'>
+      <block wx:for="{{list1}}" wx:key="{{list1}}">
+        <swiper-item>
+          <image src='{{item.thumb}}' mode="aspectFill"></image>
+         </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='fenlei'>
+    <!-- <navigator url='../../pages/huodong_xq/huodong_xq' class='navigator1'>
+      <view class='icon1'>
+        <image src='/images/index_icon1_12.jpg'></image>
+      </view>
+      <view class='icon1_word'>美食甜品</view>
+    </navigator>
+    <navigator url='../../pages/nav_text/nav_text' class='navigator2'>
+      <view class='icon1'>
+        <image src='/images/index_icon2_13.jpg'></image>
+      </view>
+      <view class='icon1_word'>周边景点</view>
+    </navigator>
+    <navigator url='../../pages/nav_text/nav_text' class='navigator2'>
+      <view class='icon1'>
+        <image src='/images/index_icon3_14.jpg'></image>
+      </view>
+      <view class='icon1_word'>丽人美发</view>
+    </navigator>
+    <navigator url='../../pages/nav_text/nav_text' class='navigator2'>
+      <view class='icon1'>
+        <image src='/images/index_icon4_15.jpg'></image>
+      </view>
+      <view class='icon1_word'>休闲娱乐</view>
+    </navigator> -->
+
+    <navigator  wx:for="{{categories}}" open-type='switchTab' url='/pages/kindall/kindall'  wx:key="index">
+      <view class='icon1'>
+        <image src='{{item.thumb}}'></image>
+      </view>
+      <view class='icon1_word'>{{item.name}}</view>
+    </navigator>
+  </view>
+  <view class='activity'>
+    <view class='huodong'>
+      <view class='huodong_word'>
+        <view class='huodong_word1'>活动专场</view>
+        <view class='huodong_word2'>Special event</view>
+        <navigator url='../../pages/quan_huodong/quan_huodong' class='point_nav'>
+          <view class='huodong_point1'></view>
+          <view class='huodong_point2'></view>
+          <view class='huodong_point2'></view>
+        </navigator>
+      </view>
+      <navigator url='../../pages/huodong_xq/huodong_xq'>
+        <image src='/images/huodongzhuanchang_37.jpg'>
+          <view class='pic_zhao1'>
+            <view class='pic_zhao1_word'>步数记录赚礼品</view>
+          </view>
+        </image>
+      </navigator>
+    </view>
+    <view class='huodong_you'>
+      <view class='HY_line1'></view>
+      <view class='HY_box'>
+        <view class='HY_nav1_word'>
+          <view class='HY_nav1_word1'>热销商家</view>
+          <view class='HY_nav1_word2'>Hot seller</view>
+          <navigator url='../../pages/goods_rexiao/index' class='point_nav'>
+            <view class='huodong_point1'></view>
+            <view class='huodong_point2'></view>
+            <view class='huodong_point2'></view>
+          </navigator>
+        </view>
+        <navigator url='../../pages/goods_xqjia/Commodity?id={{data1.id}}' class='HY_nav1'>
+          <image src='{{data1.thumb}}'>
+            <view class='HY_nav_zhao'>
+              <view class='HYn_z_word'>{{data1.title}}</view>
+              <view class='HYn_z_jine'></view>
+            </view>
+          </image>
+        </navigator>
+        <view class='HY_line'></view>
+        <view class='HY_nav1_word'>
+          <view class='HY_nav1_word1'>热销卡券</view>
+          <view class='HY_nav1_word2'>Hot selling cards</view>
+          <navigator url='../../pages/goods_new/index' class='point_nav'>
+            <view class='huodong_point1'></view>
+            <view class='huodong_point2'></view>
+            <view class='huodong_point2'></view>
+          </navigator>
+        </view>
+        <navigator url='../../pages/daijinquan/Commodity?id={{data2.id}}' class='HY_nav1'>
+          <image src='{{data2.pic[0]}}'>
+            <view class='HY_nav_zhao'>
+              <view class='HYn_z_word'>{{data2.title}}</view>
+              <view class='HYn_z_jine'>￥{{data2.cost_price}}</view>
+            </view>
+          </image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='tuijian'>
+    <view class='tj_hang1'>
+      <view class='tj_hang1_word1'>热销卡券</view>
+      <video class='tj_hang1_line'></video>
+      <view class='tj_hang1_word2'>Hot selling cards</view>
+      <navigator url='../../pages/goods_new/index' class='point_nav'>
+        <view class='tj_point1'></view>
+        <view class='huodong_point2'></view>
+        <view class='huodong_point2'></view>
+      </navigator>
+    </view>
+    <view class='tj_hang2'>
+     
+      <view class='lagoods_box' wx:for="{{list_dai}}" wx:key="{{list_dai}}">
+        <navigator url='../../pages/daijinquan/Commodity?id={{item.id}}' class='tj_list1'>
+          <image src='{{item.pic[0]}}'></image>
+          <view class='tj_hang2_word1'>{{item.dian_title}}</view>
+          <view class='linethree'>
+            <view class='quan'>券</view>
+            <view class='wem'>{{item.title}}</view>
+          </view>
+          <view class='linefour'>
+            <view class='tj_hang2_word2'>剩余{{item.stock}}张</view>
+            <view class='tj_hang2_word3'>￥{{item.cost_price}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='fenge'></view>
+  <view class='tuijian'>
+    <view class='tj_hang1'>
+      <view class='tj_hang1_word1'>会员单品</view>
+      <video class='tj_hang1_line'></video>
+      <view class='tj_hang1_word2'>Value member</view>
+      <navigator url='../../pages/huiyuandp/index' class='point_nav'>
+        <view class='tj_point1'></view>
+        <view class='huodong_point2'></view>
+        <view class='huodong_point2'></view>
+      </navigator>
+    </view>
+    <view class='tj_hang2'>
+      <view class='lagoods_box' wx:for="{{list_pu}}" wx:key="{{list_pu}}">
+        <navigator url='../../pages/danpin/Commodity?id={{item.id}}' class='tj_list1'>
+          <image src='{{item.pic[0]}}'></image>
+          <view class='tj_hang2_word1'>{{item.dian_title}}</view>
+          <view class='linethree'>
+            <view class='yuan'>员</view>
+            <view class='wem'>储值1000起可享会员价</view>
+          </view>
+          <view class='linefour'>
+            <view class='fourc'>￥{{item.cost_price}}</view>
+            <view class='fourb'>￥{{item.price}}</view>
+            <view class='foura'>会员价</view>
+          </view>
+        </navigator>
+      </view>
+      
+    </view>
+  </view>
+</view>
+<!-- 广告灰层 -->
+<text class='rule' bindtap='showRule'>广告</text>
+<view class="grey {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+  <navigator url='../../pages/hongbao/hongbao'><image src='/images/guanggao.png' class='guanggao'></image></navigator>
+  <image src='/images/close.png' class='close' bindtap='hideRule'></image>
+</view>

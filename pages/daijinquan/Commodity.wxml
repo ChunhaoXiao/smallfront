@@ -1,0 +1,133 @@
+ 
+<view class="box">
+	<view class="banner">
+    <swiper indicator-dots="true" indicator-color="rgba(229,229,229,.7)" indicator-active-color="#f9c00d" autoplay="true" interval="1500" vertical="true" duration='500'>
+      <!-- <block wx:for="{{list1}}" wx:key="{{list1}}"> -->
+        <swiper-item  wx:for="{{data.pic}}" wx:key="index">
+          <image wx:for="{{data.pic}}"  src='{{item}}' mode="aspectFill"></image>
+         </swiper-item>
+      <!-- </block> -->
+    </swiper>
+  </view>
+	<h2>{{data.title}}</h2>
+	<view class="manei-box">
+		<span class="manei">￥{{data.price}}</span>
+		<span class="len">剩余：{{data.stock}}</span>
+	</view>
+
+	<view class="fnG" bindtap='fnG'>
+		<view class="fnG-left">
+			<span class="zhuangtai">{{zhuangtai}}</span>
+			<text class="dai" data-dai="{{daisize}}">{{data.spec}}</text>
+		</view>
+		<view class="fnG-right">
+			<image src="/images/right.png" mode="widthFix"></image>
+		</view>
+	</view>
+
+	<!-- 商品评价 -->
+	<view class="ping">
+		<text class="pingtext" data-ping="{{ping}}">商品评价 ({{ping}})</text>
+		<text class="more" bindtap="more">查看更多</text>
+	</view>
+
+	<!-- 用户评价留言 -->
+	<view class="liuyan">
+		<view class="liuyan-top">
+			<!-- 头像用户名 -->
+			<view class="liuyan-top-left">
+				<image src="/images/activity-my.png" mode="widthFix"></image>
+				<text class="user" data-user="{{user}}">{{user}}</text>
+			</view>
+
+			<view class="liuyan-top-right">
+				{{time}}
+			</view>
+			<!-- 头像用户名结束 -->
+		</view>
+		<!-- 用户留言 -->
+		<view class="liuyan-bottom">
+			<text class="list-text">{{ly}}</text>
+		</view>
+		<!-- 用户留言结束 -->
+	</view>
+
+
+	<!-- 商品描述 -->
+	<view class="ping">
+		<text class="pingtext">商品描述</text>
+	</view>
+
+	<view class="show">
+		<text class="show-name">{{data.content}}</text>
+		<p class="show-time">{{data.weekday}}  | {{data.goods}} | {{data.max_count}}</p>
+		<view class="show-box">
+			<p class="show-manei">￥{{data.price}}</p>
+			<text class="Surplus">剩余{{data.stock}}张</text>
+		</view>
+	</view>
+
+	<view class="xin-box">
+		<p>有效期至：{{data.validity}}</p>
+		<p>费用包含：发现王国全天票（成人票）1张</p>  
+		<p>入园时间：09：30-16：00</p>  
+		<p>营业时间：09:30-22:30</p>  
+    <p>其他：XXXXXXXXXXXXXXXX</p>    
+	</view>
+	<!-- box结束 -->
+</view>
+
+<footer class="footer">
+	<button class="submit" bindtap="submit">立即购买</button>
+	<!-- 收藏分享 -->
+
+	<button class="shoufen" bindtap="share" open-type="share">
+		<image src="/images/fenxiang.png" mode="widthFix"></image>
+		<text>分享</text>
+	</button>
+
+	<view class="shoufen"  style="{{shou}}" bindtap="Collection">
+		<image src="/images/shoucang.png" mode="widthFix"></image>
+		<text>收藏</text>
+	</view>
+</footer>
+
+<view class="zhe" style="{{zhedis}}">
+	<view class="pinone">
+		<text class="pinone-text" bindtap="telclick">{{tel}}</text>
+		<text class="close" bindtap="telclose">取消</text>
+	</view>
+</view>
+
+<view class="xzhe" style="{{xzhe}}" catchtap="zhedis">
+	<view class="xzhe-box" catchtap="zboxdis">
+		<h2>{{data.title}}</h2>
+		<view class="manei-box manei-box-bot">
+			<span class="price">￥{{data.price}}</span>
+		</view>
+
+		<!-- 请选择种类 --> 
+
+		<text class="zhonglei">请选择种类</text>
+
+		<view class="zhongbox">
+			<text>{{data.title}}</text>
+			<!-- <text>300元代金卷</text> -->
+		</view>
+
+		<text class="zhonglei zhonglen">请选择数量</text>
+
+		<view class="len-box">
+			<view class="button" bindtap="jian"><image src="/images/jian.png" mode="widthFix"></image></view>
+			<text class="lentext">{{lentext}}</text>
+			<view class="button" bindtap="jia"><image src="/images/jia.png" mode="widthFix"></image></view>
+		</view>
+
+      <form id="submitform" bindsubmit="formSubmit" bindreset="formReset" name="subform">
+      <button class="form-but" bindtap='navigator' open-type='getUserInfo'>立即购买</button>
+     </form>
+
+	</view>
+
+</view>
+

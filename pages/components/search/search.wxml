@@ -1,0 +1,30 @@
+<!--index.wxml--> 
+<view class="page"> 
+  <view class="nav-header"> 
+    <view class="search"> 
+        <!--<view class="search-select" hidden="{{selectHide}}">
+          <navigator>Content</navigator>
+          <navigator>Content</navigator>
+        </view>-->
+        <view class='input_box'>
+          <icon type='search' class='search_icon' size='14'></icon>
+          <input class="search-input" placeholder="婚纱摄影" placeholder-class='i_tishi' auto-focus bindinput="bindInput"  bindchange="bindchange" value="{{inputValue}}"/>
+          <button class="clearInput" style="display:block" bindtap="clearInput">×</button>
+        </view>
+        <button class='search_button' style="display:inline-block" bindtap="setSearchStorage">搜索</button>
+    </view>
+  </view>
+  <view class="zong">
+    <text>历史记录</text>
+    <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+      <view>确认删除全部历史记录？</view>
+    </modal>
+    <view class='sc_button' style="display:inline-block" catchtap="clearSearchStorage">
+      <image src='/images/search_sc_18.jpg'></image>
+    </view>
+  
+    <view class="local" wx:for="{{getSearch}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx" >
+      <view wx:if="{{itemName != ''}}"> {{itemName}} </view>
+    </view>
+  </view> 
+</view>

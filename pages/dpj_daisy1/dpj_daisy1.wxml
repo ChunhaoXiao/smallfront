@@ -1,0 +1,58 @@
+<view class="red_up">
+  <view class='ru_1'>
+    <view class='rwenzi'>
+      <view class='rwenzi_up'>可提现</view>
+      <view class='rwenzi_down'>该订单已使用，可申请提现</view>
+    </view>
+  </view>
+  <view class='ru_2'>
+    <view class='ru_neirong'>
+      <view class='nr_zuo'><image src='/images/dd_xiangqing_15.jpg'></image></view>
+      <view class='nr_you'>
+        <view class='nr_you1'>大连海昌发现王国一日游（日/夜场）</view>
+        <view class='nr_you2'>有效期：2018.02.8-2018.03.8</view>
+        <view class='nr_you3'>
+          <view class='y3_zuo'>￥199</view>
+          <view class='y3_you'>x1</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="red_bottom">
+  <view class='rb_kuang'>
+    <view class='rb_zi1'>
+      <view class='rb_zi1_zuo'>券号</view>
+      <view class='rb_zi1_you'>2737954751</view>
+    </view>
+    <view class='rb_line1'></view>
+    <view class='rb_zi2'>
+      <view class='rb_zi2_zuo'>付款时间</view>
+      <view class='rb_zi2_you'>2018-9-2 17:58:05</view>
+    </view>
+    <view class='rb_zi3'>
+      <view class='rb_zi3_zuo'>买家姓名</view>
+      <view class='rb_zi3_you'>张三</view>
+    </view>
+    <view class='rb_line3'></view>
+    <view class='rb_zi4'>
+      <view class='rb_zi4_zuo'>买家电话</view>
+      <view class='rb_zi4_you'>17621251648</view>
+    </view>
+    <view class='rb_line4'></view>
+    <view class='rb_zi5'>
+      <view class='rb_zi5_zuo'>商品金额</view>
+      <view class='rb_zi5_you'>￥199</view>
+    </view>
+    <view class='rb_line5'></view>
+    <view class='rb_zi6'>
+      <view class='rb_zi6_zuo'>有效期</view>
+      <view class='rb_zi6_you'>2019.3.6-2020.8.3</view>
+    </view>
+    <view class='rb_line6'></view>
+    <view class='rb_zi7'>
+      <view class='rb_zi7_zuo'>商家地址</view>
+      <view class='rb_zi7_you'>西安路罗斯福四楼</view>
+    </view>
+  </view>
+</view>

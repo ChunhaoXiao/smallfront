@@ -1,0 +1,21 @@
+<view id="box">
+
+<block>
+	<view class="text-boxs" wx:for="{{list}}" wx:key="{{list}}">
+<navigator url='../../pages/goods_xqjia/Commodity?id={{item.id}}'>
+		<view class="target"  bindtap="gonew">
+			<image src="{{item.pic[0]}}"></image>
+			<view class="font-wei-p">{{item.title}}</view>
+      <view class='lineone'><view class='quan'>券</view>
+
+      <view class='zhe' wx:if="{{item.dai==''||item.dai==null}}">无</view>
+      <view class='zhe' wx:else>{{item.dai}}</view>
+      </view>
+      <view class='lineonea'><view class='yuan'>员</view><view class='zhe'>储值1000起可享会员价</view></view>
+		</view>
+</navigator>
+	</view>
+	<!-- DIVbox -->
+</block>
+	<!--最外层BOX结束 -->
+</view>

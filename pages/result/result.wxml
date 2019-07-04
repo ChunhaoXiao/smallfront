@@ -1,0 +1,85 @@
+<!-- 搜索 -->
+<view class='searchk'>
+  <view class='searchall'>
+    <image src='/images/searchall.png' class='pica'></image>
+    <input class='searchall_you' name='title' type='text' value='' placeholder='搜索商品和店名' placeholder-style="color:#999;"></input>
+  </view>
+</view> 
+<!-- 下拉筛选框 -->
+<view class="page">
+  <view class="nav">
+    <view class="nav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+      <view class="content">全城</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son borders {{shownavindex == 2? 'active' : ''}}" bindtap="list" data-nav="2">
+      <view class="content">距离最近</view>
+    </view>
+    <view class="nav-son {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3">
+      <view class="content">智能排序</view>
+      <view class="icon"></view>
+    </view>
+  </view>
+
+  <!-- 全城 -->
+  <view class="quyu {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+
+    <view class="qy quyu-left">
+      <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" bindtap="selectleft" data-city='{{index}}'>
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-center">
+      <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{citycenter}}" bindtap="selectcenter" data-city='{{index}}'>
+        {{index}}
+      </view>
+    </view>
+    <view class="qy quyu-right">
+      <view wx:for="{{cityright}}" class="{{select3 == index?'current3':''}}" bindtap='selectright' data-city="{{index}}">
+        <label>{{item}}</label>
+        <image src='/images/selectRight.png' style="{{select3 == index?'display:block':'display:none'}}"></image>
+      </view>
+    </view>
+    <view class='form-btn'>
+      <button class='btn-reset' bindtap='quyuEmpty'>重置</button>
+      <button class='btn-submit' bindtap='submitFilter'>确定</button>
+    </view>
+  </view>
+
+  <!-- 智能排序 -->
+  <view class="temp temp2 contentCenter {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+    <view wx:for="{{content}}" bindtap='selectPX' data-index="{{index}}" class="pxTable {{pxIndex == index?'current4':''}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="fullbg {{isfull ?'fullopacity':''}}" bindtap="hidebg"></view>
+</view>
+<!-- 列表 -->
+  <view class="nav_items">  
+    <navigator url="../goods_xq/Commodity">
+      <view class='litem'>   
+        <image src="/images/picb_15.png"></image>
+        <view class='youk'>
+          <text class='wena'>施华洛全球旅拍婚纱摄影</text>
+          <view class='address'>青泥洼桥</view>
+          <view class='wenb'>  
+            <text class='sales'>￥99</text>  
+            <text class='price'>月销量344件</text>
+          </view> 
+        </view>
+      </view>  
+    </navigator>
+    <navigator url="../goods_xq/Commodity">
+      <view class='litem'>   
+        <image src="/images/picb_15.png"></image>
+        <view class='youk'>
+          <text class='wena'>施华洛全球旅拍婚纱摄影</text>
+          <view class='address'>青泥洼桥</view>
+          <view class='wenb'>  
+            <text class='sales'>￥99</text>  
+            <text class='price'>月销量344件</text>
+          </view> 
+        </view>
+      </view>  
+    </navigator> 
+  </view>

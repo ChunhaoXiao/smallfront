@@ -1,0 +1,171 @@
+/* pages/zhanghu/zhanghu.wxss */
+page{
+  background-color: #fbfbfb;
+}
+input {
+  outline: none;
+  border: none;
+  list-style: none;
+}
+button::after {
+  border: none;
+}
+.bj{
+  width: 100%;
+  height: 217rpx;
+  background-color: #f9c00d;
+  margin: auto;
+  align-items: center;
+}
+.biaoti{
+  font-size: 28rpx;
+  color: #000;
+  text-align: center;
+  line-height: 72rpx;
+}
+.price{
+  font-size: 60rpx;
+  color: #ff6a6a;
+  text-align: center;
+  line-height: 77rpx;
+}
+.tixian{
+  width: 653rpx;
+  height: 66rpx;
+  background-color: #fce086;
+  border: 0rpx;
+  font-size: 25rpx;
+  color: #ff6a6a;
+  text-align: center;
+  line-height: 66rpx;
+  border-radius: 100rpx;
+  margin-top: 38rpx;
+}
+.tongji{
+  width: 100%;
+  height: 53rpx;
+  font-size: 25rpx;
+  color: #ff6a6a;
+  text-align: left;
+  line-height: 53rpx;
+  margin-top: 38rpx;
+  margin-left: 36rpx;
+}
+.list{
+  width: 686rpx;
+  height: auto;
+  margin: auto;
+}
+/*box2样式*/
+.fbox2{
+  width: 686rpx;
+  height: 184rpx;
+  border: 1rpx #eeeeee solid;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.fbox2_wf{
+  width: 645rpx;
+  height: 120rpx;
+  margin: auto;
+  margin-top: 30rpx;
+}
+
+.fbox2_wf image{
+  width: 161rpx;
+  height: 100%;
+  float: left;
+}
+.fbox2_you{
+  width: 460rpx;
+  height: 100%;
+  float: right;
+}
+.fbox2_you1{
+  width: 100%;
+  height: 29rpx;
+  line-height: 29rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+.fbox2_you2{
+  width: 100%;
+  height: 62rpx;
+  line-height: 62rpx;
+  font-size: 24rpx;
+  color: #999999;
+  overflow: hidden;
+}
+.fbox2_you3{
+  width: 100%;
+  height: 19rpx;
+  line-height: 19rpx;
+  font-size: 24rpx;
+  color: #000;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.fbox2_you2_1{
+  height: 100%;
+  float: right;
+  line-height: 19rpx;
+  font-size: 24rpx;
+  color: #999999;
+  overflow: hidden;
+}
+/* 弹框 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog {
+  width: 500rpx;
+  height: 300rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  margin: -180rpx 105rpx;
+}
+.modal-title {
+  padding-top: 40rpx;
+  font-size: 32rpx;
+  color: #191515;
+  text-align: center;
+  line-height: 50rpx;
+}
+.modal-content {
+  font-size: 32rpx;
+  color: #191515;
+  text-align: center;
+  line-height: 50rpx;
+}
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-top: 38rpx;
+  align-items: center;
+}
+.btn-confirm {
+  width: 222rpx;
+  height: 70rpx;
+  background-color: #f9c00d;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,48 @@
+<view class="box">
+ <view class="title-box">
+   <text>商家已同意退款</text>
+   <text>{{time}}</text>
+ </view>
+
+ <!-- listbox -->
+ <view class="listbox">
+  <view class="listh">
+   <view class="listh-left">
+   <image src="/images/refund2.jpg" mode="widthFix"></image>
+   </view>
+   
+   <view class="listh-right">
+   <text class="h1">{{name}}</text>
+   <text class="h2">{{showtime}}</text>
+   <view class="h3">
+   <text class="manei">{{manei}}</text>
+   <text class="length" decode="{{true}}">x{{length}}</text>
+   </view>
+   </view>
+   <!-- listh -->
+  </view>
+
+
+  <view class="list-table">
+   <block wx:for="{{list}}" wx:for-item="item">
+   <view class="list-table-text">
+    <text class="text-left">{{item.bian}}</text>
+    <text class="text-right">{{item.number}}</text>
+   </view>
+   </block>
+  </view>
+  <!-- listbox -->
+
+  <view class="but-box">
+  <button class="but" bindtap="click">联系客服</button>
+  </view>
+ </view>
+ <!-- box -->
+</view>
+
+<view class="zhe" style="{{zhedis}}">
+	<view class="pinone">
+		<text class="pinone-text" bindtap="telclick">{{tel}}</text>
+		<text class="close" bindtap="telclose">取消</text>
+	</view>
+</view>

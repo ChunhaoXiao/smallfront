@@ -1,0 +1,26 @@
+<view class="kefu_box">
+  <view class='pingtai_logo'>
+    <image src='/images/kefu_logo_04.jpg'></image>
+  </view>
+  <view class='call_box'>
+    <view class='call1' bindtap='callclick'>
+      <view class='call1_logo'>
+        <image src='/images/call1_logo_10.jpg'></image> 
+      </view>
+      <view class='call1_number'>{{useData[0].tel1}}</view>
+    </view>
+    <view class='call2' bindtap='callclick1'>
+      <view class='call1_logo'>
+        <image src='/images/call2_logo_14.jpg'></image>
+      </view>
+      <view class='call2_number'>{{useData[0].tel2}}</view>
+    </view>
+  </view>
+</view>
+<view class="call_zhao" bindtap='zhaodis' style='{{zhao1}}'>
+  <view class='call_anniu'>
+    <view class='call_an_number' bindtap="telclick">{{iphone}}</view>
+    <view class='close' bindtap="telclose">取消</view>
+  </view>
+</view>
+

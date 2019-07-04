@@ -1,0 +1,41 @@
+<header>
+<navigator class="triangle_border_right">
+<text class="jieshao">活动介绍</text>
+<span class="sanjiao"></span>
+</navigator>
+</header>
+
+<view class="feG"></view>
+
+<view class="myh">
+  <view class="my-left">
+   <image src="/images/activity-my.png" mode="widthFix"></image>
+   <view class="my-left-text">
+    <span class="myname">{{myname}}</span>
+    <span class="myming">第{{myming}}名</span>
+   </view>
+  </view>
+  <!-- my-left结束 -->
+  <view class="my-right">
+     <text>{{ckr}}</text>
+  </view>
+</view>
+
+<view class="feG"></view>
+
+
+<block wx:for="{{thisdata}}" wx:for-item="item">
+<view class="that">
+  <view class="that-left">
+  <text class="number">{{item.number}}</text>
+   <image src="/images/activity-my.png" mode="widthFix"></image>
+   <view class="that-left-text">
+    <span class="thatname">{{item.thatname}}</span>
+   </view>
+  </view>
+  <!-- that-left结束 -->
+  <view class="that-right">
+     <text>{{item.length}}</text>
+  </view>
+</view>
+</block>
