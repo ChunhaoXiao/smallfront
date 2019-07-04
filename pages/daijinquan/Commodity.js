@@ -131,4 +131,12 @@ Page({
     }
   },
 
+  getUserInfo:function(e)
+  {
+    console.log(e)
+    wx.login({
+       
+    })
+  }
+
 })

@@ -124,7 +124,7 @@
 		</view>
 
       <form id="submitform" bindsubmit="formSubmit" bindreset="formReset" name="subform">
-      <button class="form-but" bindtap='navigator' open-type='getUserInfo'>立即购买</button>
+      <button class="form-but" bindgetuserinfo='getUserInfo' bindtap='navigator' open-type='getUserInfo'>立即购买</button>
      </form>
 
 	</view>
